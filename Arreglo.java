@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 public class Arreglo
 {
@@ -18,14 +17,21 @@ public class Arreglo
     }
     
     public int maximo(){
-        
-    }
-    
-    public int minimo(){
-        
+        int max=0;
+        for(int i=0;i<vector.length;i++){
+            if(vector[i]>max){
+                max=vector[i];
+            }
+        }
+        return(max);
     }
     
     public double media(){
- 
+        double media=0.0;
+        for(int i=0;i<vector.length;i++){
+            media=media+vector[i];
+        }
+        media= media/vector.length;
+        return(media);
     }
 }
